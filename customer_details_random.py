@@ -21,56 +21,28 @@ def send_to_kafka(details):
 
 def random_customer_details():
     # Generate customer details
-    tenure = str(random.randint(0, 100))
-    MonthlyCharges = str(random.randint(1, 100))
     
-    # Create customer details dictionary
-    # customer_details = {
-    #     'customerID': 'ABC-' + ''.join([str(random.randint(0, 9)) for _ in range(4)]),
-    #     'gender': random.choice(('Male', 'Female')),
-    #     'SeniorCitizen': str(random.randint(0, 1)),
-    #     'Partner': random.choice(('Yes', 'No')),
-    #     'Dependents': random.choice(('Yes', 'No')),
-    #     'tenure': tenure,
-    #     'PhoneService': random.choice(('Yes', 'No')),
-    #     'MultipleLines': random.choice(('Yes', 'No', 'No phone service')),
-    #     'InternetService': random.choice(('DSL', 'Fiber optic', 'No')),
-    #     'OnlineSecurity': random.choice(('Yes', 'No', 'No internet service')),
-    #     'OnlineBackup': random.choice(('Yes', 'No', 'No internet service')),
-    #     'DeviceProtection': random.choice(('Yes', 'No', 'No internet service')),
-    #     'TechSupport': random.choice(('Yes', 'No', 'No internet service')),
-    #     'StreamingTV': random.choice(('Yes', 'No', 'No internet service')),
-    #     'StreamingMovies': random.choice(('Yes', 'No', 'No internet service')),
-    #     'Contract': random.choice(('Month-to-month', 'One year', 'Two year')),
-    #     'PaperlessBilling': random.choice(('Yes', 'No')),
-    #     'PaymentMethod': random.choice(('Bank transfer (automatic)', 'Credit card (automatic)', 'Electronic check', 'Mailed check')),
-    #     'MonthlyCharges': MonthlyCharges
-    # }
-    # customer_details['TotalCharges'] = str(int(tenure) * int(MonthlyCharges))
-
-    details = [['7590-VHVEG','Female',0,'Yes','No',1,'No','No','DSL','No','Yes','No','No','No','No','Month-to-month','Yes','Electronic check',29 ,29]]
-
     customer_details = {
-        'customerID': 'ABC-' + ''.join([str(random.randint(0, 9)) for _ in range(4)]),
-        'gender': random.choice(('Male', 'Female')),
-        'SeniorCitizen': '0',
-        'Partner': 'Yes',
-        'Dependents': 'No',
-        'tenure': '1',
-        'PhoneService': 'No',
-        'MultipleLines': 'No',
-        'InternetService': 'DSL',
-        'OnlineSecurity': 'No',
-        'OnlineBackup': 'Yes',
-        'DeviceProtection': 'No',
-        'TechSupport': 'No',
-        'StreamingTV': 'No',
-        'StreamingMovies': 'No',
-        'Contract': 'Month-to-month',
-        'PaperlessBilling': 'Yes',
-        'PaymentMethod': 'Electronic check',
-        'MonthlyCharges': '29',
-        'TotalCharges': '29'
+        'customerID': input('Enter customerID'),
+        'gender': input('Enter gender'),
+        'SeniorCitizen': input('Enter SeniorCitizen'),
+        'Partner': input('Enter Partner'),
+        'Dependents': input('Enter Dependents'),
+        'tenure': input('Enter tenure'),
+        'PhoneService': input('Enter PhoneService'),
+        'MultipleLines': input('Enter MultipleLines'),
+        'InternetService': input('Enter InternetService'),
+        'OnlineSecurity': input('Enter OnlineSecurity'),
+        'OnlineBackup': input('Enter OnlineBackup'),
+        'DeviceProtection': input('Enter DeviceProtection'),
+        'TechSupport': input('Enter TechSupport'),
+        'StreamingTV': input('Enter StreamingTV'),
+        'StreamingMovies': input('Enter StreamingMovies'),
+        'Contract': input('Enter Contract'),
+        'PaperlessBilling': input('Enter PaperlessBilling'),
+        'PaymentMethod': input('Enter PaymentMethod'),
+        'MonthlyCharges': input('Enter MonthlyCharges'),
+        'TotalCharges': input('Enter TotalCharges')
     }
     
     return customer_details
