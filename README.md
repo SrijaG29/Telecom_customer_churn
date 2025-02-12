@@ -17,3 +17,6 @@ I have created two PySpark files: `Customer_Kafka_streaming.ipynb` for streaming
 4. Run `Customer_Kafka_streaming.ipynb` and `Customer_Pyspark_streaming.ipynb`, changing the Kafka ports and topic name as needed.
 5. Run the `customer_details_random.py` script to push data into the Kafka topic.
 6. You can now see the predicted results in the console.
+
+
+**Link for dashboards repository:** https://github.com/SrijaG29/Telecom_customer_churn_dashboards
